@@ -1,0 +1,18 @@
+<div>
+
+<table>
+
+<p id="notice"><%= notice %></p>
+
+<h2>Your Pragmatic Cart</h2>
+<ul>    
+  <% @cart.line_items.each do |item| %>
+    <li><%= item.product.title %> <%= number_to_currency(item.product.price) %></li>
+  <% end %>
+</ul>
+
+  
+<%= link_to 'Edit', edit_cart_path(@cart) ,class:"w3-button w3-light-gray" %> |
+<%= link_to 'Back', carts_path , class:"w3-button w3-light-gray" %>
+</table>
+</div>

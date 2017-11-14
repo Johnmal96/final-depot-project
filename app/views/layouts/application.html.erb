@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Depot</title>
-    
-    <%= csrf_meta_tags %>
+    <title>Online store</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
 
   </head>
 
     <div class="w3-bar w3-light-grey">
       <a href="/" class="w3-bar-item w3-button"><%= image_tag 'mad-icon.png', alt: 'The Mad Icon', height: '28', width: '28', style: 'display: block; margin-left: auto; margin-right: auto; margin-bottom: none; margin-top: none' %></a>
       <a href="/static_pages/home" class="w3-bar-item w3-button">Home</a>
-      <a href="/" class="w3-bar-item w3-button">Root</button>
+      <a href="/" class="w3-bar-item w3-button">Store</a>
       <a href="/static_pages/help" class="w3-bar-item w3-button">Help</a>
       <a href="/static_pages/about" class="w3-bar-item w3-button">About</a>
+      <a href="/products" class="w3-bar-item w3-button">Products</a>
     </div>
 
   <body class='<%= controller.controller_name %>'>
