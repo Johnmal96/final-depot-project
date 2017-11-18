@@ -12,14 +12,22 @@
   </head>
 
     <div class="w3-bar w3-light-grey">
-      <a href="/" class="w3-bar-item w3-button"><%= image_tag 'mad-icon.png', alt: 'The Mad Icon', height: '28', width: '28', style: 'display: block; margin-left: auto; margin-right: auto; margin-bottom: none; margin-top: none' %></a>
+      <a href="/" class="w3-bar-item w3-button">
+        <%= image_tag 'logo.png', alt: 'Aeron Logo', height: '30', width: '36', style: 'display: block; margin-left: auto; margin-right: auto; margin-bottom: none; margin-top: none' %></a>
       <a href="/static_pages/home" class="w3-bar-item w3-button">Home</a>
       <a href="/" class="w3-bar-item w3-button">Store</a>
       <a href="/static_pages/help" class="w3-bar-item w3-button">Help</a>
       <a href="/static_pages/about" class="w3-bar-item w3-button">About</a>
-      <a href="/products" class="w3-bar-item w3-button">Products</a>
-      <a href="/carts" class="w3-bar-item w3-button">Carts</a>
+      <a href="/login" class="w3-bar-item w3-button">Login</a>
+      
+      <% if session[:user_id] %>
+      <a href="/orders" class="w3-bar-item w3-button">Orders</a>
       <a href="/line_items" class="w3-bar-item w3-button">Line Items</a>
+      <a href="/carts" class="w3-bar-item w3-button">Carts</a>
+      <a href="/products" class="w3-bar-item w3-button">Products</a>
+      <a href="/users" class="w3-bar-item w3-button">Users</a>
+      <a><%= button_to 'Logout', logout_path, method: :delete, class: "w3-bar-item w3-button"  %></a>
+    <% end %>
     </div>
 
   <body class='<%= controller.controller_name %>'>

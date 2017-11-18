@@ -1,0 +1,38 @@
+<div class="depot_form">
+  
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation" class="w3-panel">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<fieldset>
+  <legend>Enter User Details</legend>
+  <div class="w3-panel">
+    <%= f.label :name, 'Name:' %>
+    <%= f.text_field :name , class:"w3-input w3-border" %>
+  </div>
+
+  <div class="w3-panel">
+    <%= f.label :password, 'Password:' %>
+    <%= f.password_field :password , class:"w3-input w3-border" %>
+  </div>
+
+  <div class="w3-panel">
+    <%= f.label :password_confirmation, 'Confirm:' %>
+    <%= f.password_field :password_confirmation , class:"w3-input w3-border" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit :Submit, class:"w3-button w3-light-gray" %>
+  </div>
+</fieldset>
+<% end %>
+</div>
