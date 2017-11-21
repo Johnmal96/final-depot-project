@@ -12,10 +12,15 @@
   }
 
   .list_image {
-    width:  80px;
-    height: 90px;
+    width:  380px;
+    height: 530px;
   }
 
+  .list_image1 {
+    width:  80px;
+    height: 100px;
+  }
+  
   .list_description {
     width: 60%;
 
@@ -41,10 +46,10 @@
   }
 
   .list_line_even {
-    background:   #e0f4f8;
+    background:light_grey;
   }
 
   .list_line_odd {
-    background:   #a8b0f8;
+    background:#C0C0C0;
   }
 }

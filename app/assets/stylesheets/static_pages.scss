@@ -1,3 +1,81 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+background-image: image-url('background.png');
+background-repeat: repeat;
+background-size: 100%;}
+
+.container {
+    background-color:silver;
+    height:10%; 
+    width:40%;
+    margin-left:10%;
+    margin-top:17%;
+    text-align:center;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.container:hover{
+   background-color:lightblue;
+   cursor:pointer;
+}
+
+
+.help {
+    background-color:silver;
+    height:1%; 
+    width:80%;
+    margin-left:10%;
+    text-align:center;
+}
+
+.pageContainer {
+	background-color:white;
+	height: 800px;
+	width: 800px;
+	margin-top: -66px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.shopnow {
+    background-color:silver;
+    height:5%; 
+    width:30%;
+    margin-left:35%;
+    text-align:center;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.shopnow:hover{
+   background-color:lightblue;
+   cursor:pointer;
+}
+
+.about {
+       text-align:center;
+}
+
+.size {
+    margin-left:10%;
+    margin-top:1%;
+}
+
+.right {
+    height:30%; 
+    width:38%;
+    margin-left:51%;
+    margin-top:-28%;
+    text-align:center;
+}
+
+.two {
+    background-color:silver;
+    height:1%; 
+    width:80%;
+    margin-left:10%;
+    text-align:center;
+    margin-top:11%;
+}

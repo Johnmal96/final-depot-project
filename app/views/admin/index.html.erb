@@ -1,3 +1,7 @@
-<h1>Welcome</h1>
+<fieldset>
+  <legend>Welcome!</legend>
 <p></->It's <%= Time.now %></p>
-<p>We have <%= pluralize(@total_orders, "order") %>.</p>
+<a href="orders">
+<p>We have <%= pluralize(@total_orders, "order") %>.</p></a>
+</fieldset>
+
